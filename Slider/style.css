@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    
+}
+h1{
+    background: linear-gradient(to right, rgb(215, 12, 12) 10%, rgba(3, 51, 155, 0.926) 60%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.container{
+    min-height: 100vh;   
+    background-color: #ffffff;;
+    position: absolute;
+    padding: 30px 0;
+    font-size: 14px;
+
+}
+
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    
+
+}
+
+.slide-content {
+    margin: 30px 40px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+
+.card {
+    border-radius: 30px;
+    background-color: #fdfdfd;
+    width: 320px;
+   
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 5px 9px rgba(0, 0, 0, 0.08);
+    border:1px solid rgba(15, 15, 15, 0.34);
+    
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+    user-select: none;
+}
+
+.image-content {
+    row-gap: 9px;
+    position: relative;
+    padding: 24px 0;
+
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(45, 45, 45, 0.963);
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(45, 45, 45, 0.963);
+
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #fdfdfd;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+    border: 3px solid rgb(79, 79, 79);
+
+}
+
+.card-image .card-img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500px;
+    color: rgb(17, 17, 17);
+}
+
+.description {
+    font-size: 14px;
+    color: rgb(97, 97, 97);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button {
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin: 14px;
+    transition: all 0.3s ease;
+    background-image: linear-gradient(60deg,rgba(1, 72, 142, 0.893),rgb(0, 146, 169));
+
+}
+
+.button:hover {
+    background-image: linear-gradient(60deg,rgba(23, 114, 205, 0.893),rgba(12, 101, 209, 0.995));
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 5px 9px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
